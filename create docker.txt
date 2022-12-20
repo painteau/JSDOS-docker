@@ -1,8 +1,0 @@
-Create docker :
-
-docker build -t painteau/jsdos-docker:latest .
-docker push painteau/jsdos-docker:latest
-
-Done !
-
-run docker -d --name mydocker -p 9999:8080 --mount type=bind,source=/home/bundles/my-bundle/bundle.jsdos,target=/app/_site/bundle.jsdos painteau/jsdos-docker:latest
